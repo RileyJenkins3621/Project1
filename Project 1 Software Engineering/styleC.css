@@ -1,0 +1,48 @@
+.box{
+    width:100px;
+    height:100px;
+    display:flex;
+    font-size:40px;
+    border-top:1px solid #687291;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    margin: 2px;
+    transition: width 0.3s;
+}
+ul{
+    font-family:Tahoma;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@keyframes animation{
+    0% {
+        background-color: #687291;
+
+    }
+    50% {
+        background-color: #800080;
+    }
+    100% {
+        backgorund-color: #FF0000;
+    }
+
+    
+}
+
+div:hover{
+    width: 300px;
+}
+
+.box:nth-child(odd){
+    animation: animation 2s infinite;
+}
+
+.box:nth-child(even){
+    background-color:#eeeff2
+}
