@@ -1,0 +1,33 @@
+.box{
+    width:100px;
+    height:150px;
+    display:flex;
+    border-left:10px dotted #D0D0FF;
+    margin-right:10px;
+    background-color:#eeeff2;
+    font-size:40px;
+    padding:10px;
+    justify-content: center;
+    align-items:center;
+    color:#687291;
+    cursor:ponter;
+    transition:background-color 0.3s, color 0.3s;
+}
+ul{
+    display:flex;
+    font-family:Tahoma;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items:flex-start;
+    flex-wrap:nowrap;
+    
+}
+.box:last-child{
+    position:absolute;
+    bottom:0;
+    right:0;
+}
+.box:hover{
+    background-color: yellow;
+    color:goldenrod;
+}
